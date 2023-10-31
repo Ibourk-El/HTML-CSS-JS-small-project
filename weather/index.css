@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.background {
+  background-image: linear-gradient(to bottom, skyblue, #0099ff);
+  width: 400px;
+  height: fit-content;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+.data {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.background .search-box {
+  margin-bottom: 0px;
+}
+
+.background .search-box input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: gray;
+}
+.background .search-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.background img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.background h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.background h3 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.other-thing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.other-thing div {
+  display: flex;
+  color: #ccc;
+}
+.other-thing div i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+.other-thing div p {
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 1.7em;
+}
+.other-thing div p span {
+  font-size: 18px;
+}

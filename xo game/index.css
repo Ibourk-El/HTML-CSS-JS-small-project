@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eee;
+  height: 100vh;
+}
+
+.boxs {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border: 10px solid #ddd;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  position: relative;
+}
+.win-line {
+  content: "";
+  width: 0%;
+  height: 10px;
+  background-color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 0px #ff0000;
+  transition: 0.5s;
+}
+.box {
+  background-color: #fff;
+  position: relative;
+}
+.o {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #aaa;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.x {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.x::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  background-color: #aaa;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.x::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  background-color: #aaa;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

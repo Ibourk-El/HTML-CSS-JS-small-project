@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom, skyblue, #0051ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.to-do{
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #eee;
+    height: fit-content;
+    border-radius: 20px;
+    
+
+}
+.to-do .write-bar{
+    display: flex;
+   
+}
+
+.to-do .write-bar input{
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 18px;
+    width: 300px;
+
+}
+
+.to-do .write-bar button{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: skyblue;
+}
+
+.to-do ul li{
+    padding: 10px 0px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+}
+
+.to-do ul li button{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 5px 6px;
+    border: none;
+    border-radius: 10px;
+}
+.to-do ul li input{
+    margin-left: 10px;
+}
+.to-do ul li p{
+    margin-left: 10px;
+    text-align: center;
+    width: 300px;
+}
+.to-do ul li p.active{
+    text-decoration: line-through;
+}
+
+
+
+.to-do ul li button:hover{
+    background-color: rgb(252, 57, 57);
+    color: white;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="clock">
+      <div>
+        <span>12</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+      </div>
+      <div class="bar hour"></div>
+      <div class="bar minute"></div>
+      <div class="bar second"></div>
+    </div>
+    <script>
+      const hour = document.querySelector(".hour");
+      const minute = document.querySelector(".minute");
+      const second = document.querySelector(".second");
+      let degS = 0;
+      let degM = 0;
+      let degH = 0;
+      let count = 1;
+      setInterval(() => {
+        degS += 1;
+        if (degS === 60) {
+          degM += 1;
+          degS = 0;
+        }
+        if (degM === 12 * count) {
+          degH += 1;
+          count += 1;
+        }
+        if (degM === 60) {
+          degM = 0;
+          count = 1;
+        }
+        second.style.transform = `rotate(${degS*6}deg)`;
+        minute.style.transform = `rotate(${degM*6}deg)`;
+        hour.style.transform = `rotate(${degH*6}deg)`;
+      }, 1000);
+    </script>
+  </body>
+</html>

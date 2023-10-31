@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        height: 200vh;
+      }
+      .color {
+        /* width: 100%; */
+        height: 10px;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: blue;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="color"></div>
+
+    <script>
+      let line = document.querySelector("div");
+      let height = document.documentElement.scrollHeight - window.innerHeight;
+
+      window.onscroll = () => {
+        line.style.width = `${(window.scrollY * 100) / height}%`;
+      };
+    </script>
+  </body>
+</html>

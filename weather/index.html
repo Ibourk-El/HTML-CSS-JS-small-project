@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css" />
+    <title>weather</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="search-box">
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="Enter Your City"
+        />
+        <button id="search-btn" class="search-btn">Search</button>
+      </div>
+      <div class="data">
+        <img id="img" src="images/snow.png" alt="" />
+        <h1 class="degry"><span id="D-num" class="number">7</span> °c</h1>
+        <h3 class="city" id="city">New York</h3>
+
+        <div class="other-thing">
+          <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <p><span id="H-num">48</span>%<br />Humidity</p>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <p><span id="W-num">48</span>Km/h<br />Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

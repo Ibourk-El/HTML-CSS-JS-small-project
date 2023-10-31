@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #f703f7, #440744);
+}
+
+.box {
+  margin: 10px 100px 0px;
+  width: 500px;
+  padding: 20px;
+}
+
+.box .title {
+  font-size: 24px;
+  color: #eee;
+  padding: 20px 0;
+}
+button {
+  cursor: pointer;
+}
+
+.box .create-btn {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f703f7;
+  color: #eee;
+}
+
+.box .write-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 0px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.box .write-txt input,
+.box .write-txt textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #1b1a1a;
+}
+
+.box .write-txt textarea {
+  height: 150px;
+}
+
+.box .write-txt .save {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #eee;
+  background-color: #f703f7;
+}
+
+.box .create-btn:hover,
+.box .write-txt .save:hover {
+  background-color: #e30aeb;
+}
+
+ul li .title-btns {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 10px 10px 0px 0px;
+}
+
+ul li .title-btns .title-note {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ul li .title-btns button {
+  background-color: #f703f7;
+  border-radius: 50%;
+  padding: 2px 6px;
+  color: #eee;
+}
+ul li p {
+  width: 100%;
+  background-color: #eee;
+  margin-top: 2px;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 0px 0px 10px 10px;
+}
+
+li p.active {
+  height: fit-content;
+  padding: 10px;
+}

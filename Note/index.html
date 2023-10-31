@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css" />
+    <title>Notes</title>
+  </head>
+  <body>
+    <div class="box">
+      <h3 class="title">Note</h3>
+      <button class="create-btn" id="create-btn">Create New Note</button>
+
+      <div class="write-txt" id="write-txt-box">
+        <input type="text" name="title" id="title" placeholder="title" />
+        <textarea
+          name="txt-body"
+          id="txt-body"
+          placeholder="your note"
+        ></textarea>
+        <button class="save" id="save">save</button>
+      </div>
+
+      <ul id="ul"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

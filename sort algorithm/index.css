@@ -1,0 +1,59 @@
+
+section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 10px;
+  position: relative;
+}
+ul {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  width: 90%;
+  position: relative;
+  margin-right: 10px;
+}
+.cols {
+  height: 250px;
+  border: 10px solid #ccc;
+}
+/* li {
+  transition: 1s;
+} */
+.cols li {
+  height: 230px;
+  width: 5px;
+  border-radius: 10px 10px 0 0;
+  background-color: red;
+  margin: 6px;
+  margin-bottom: 0px;
+  position: absolute;
+}
+.number {
+  width: 5px;
+  /* top:30px ;
+    margin-bottom: 10px; */
+  top: 10px;
+  left: 10px;
+}
+.number li {
+  width: 5px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid red;
+  position: absolute;
+}
