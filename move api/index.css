@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 110vh;
+    background-image: linear-gradient(to bottom, #740000 ,black);
+}
+
+.background{
+    width: 400px;
+    background-color: transparent;
+    border:1px solid #b31414;
+    margin: auto ;
+    padding: 20px;
+    color: #eee;
+    border-radius: 10px;
+}
+
+.background .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+.background .img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.background .img img{
+    width: 230px;
+    border: 1px solid red;
+    border-left-color:transparent;
+    border-right:0px solid transparent
+
+}
+.img div{
+    border: 1px solid red;
+    border-right-color:transparent ;
+}
+.img p{
+    padding: 9.3px;
+    /* border-bottom: 1px solid red; */
+    color: #a7a7a7;
+    font-size:14px;
+    background-image: linear-gradient(to top left, #8b0202,black);
+    /* border-radius: 10px 0px 0 10px ; */
+}
+.img p:nth-child(2n+1){
+    background-image: linear-gradient(to bottom right, #8b0202,black);
+
+}
+
+ .p{
+    font-size: 14px;
+    /* border-radius: 10px 0 0 10px; */
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to left, #460000,black);
+ }
+ .search{
+    padding: 10px;
+    margin:20px auto;
+ }
+ input,button{
+    background-image: linear-gradient(to left, #460000,black);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    color:#a7a7a7
+ }
+ button{
+    width: fit-content;
+ }
